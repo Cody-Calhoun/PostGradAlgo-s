@@ -15,4 +15,16 @@ function OnlyOdd(){
     }
 }
 
-OnlyOdd();
+// OnlyOdd();
+
+// Write a program that would print the sum of all the odd numbers from 1 to 5000
+function PrintSum(){
+    let sum = 0;
+    for(let i = 0; i<=5000; i++){
+        sum+=i;
+    }
+    console.log(sum)
+    // return sum
+}
+// console.log(PrintSum());
+PrintSum();
