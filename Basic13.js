@@ -27,4 +27,33 @@ function PrintSum(){
     // return sum
 }
 // console.log(PrintSum());
-PrintSum();
+// PrintSum();
+
+function IterateArray(arr){
+   for(let i = 0; i<arr.length; i++)
+   {
+       console.log(arr[i])
+   } 
+}
+
+const dog = [3,2,5,6,7]
+IterateArray(dog);
+
+// This is a function that tells if a linked list has a loop or not
+function HasLoop()
+{
+
+    const walker = this.head;
+    const runner = walker.next;
+
+    while (runner != null && runner.next != null)
+    {
+        if (walker == runner)
+        {
+            return true
+        }
+        walker = walker.next;
+        runner = runner.next.next;
+    }
+    return false
+}
